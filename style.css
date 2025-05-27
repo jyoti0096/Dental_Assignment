@@ -1,0 +1,773 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 2px solid #f0ad4e;
+}
+
+.logo {
+    font-size: 28px;
+    color: orange;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #666;
+    font-size: 14px;
+    display: block;
+    margin-top: -6px;
+    font-weight: normal;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #e69500;
+}
+
+.phone {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 0;
+}
+
+.left {
+    flex: 1.2;
+    min-width: 300px;
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-box {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    
+    background-color: rgba(255, 255, 255, 0.85); /* More transparent */
+    padding: 25px;
+/*     
+    max-width: 450px; */
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.overlay-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.overlay-box p {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+/* Form Styles */
+.form-container {
+    /* display: flex;
+    flex-direction: column; */
+    flex: 1;
+     min-width: 300px;
+      background: #f5f2e9;
+    align-items: center; /* This centers all child elements horizontally */
+    text-align: center; /* This centers the text */
+    padding: 40px 20px; /* Adjusted padding */
+}
+/* flex: 1;
+    min-width: 300px;
+    background: #f5f2e9;
+    padding: 40px 30px;
+    border-left: 2px solid  */
+.form-container h3 {
+    margin-top: 200px;
+    font-size: 24px;
+    align-self: center;
+}
+
+.form-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 60%;
+    margin: 0 auto 12px auto;
+    padding: 14px 16px;
+    border-radius: 28px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    display: block;
+}
+
+/* Updated Checkbox Styles */
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0 auto 12px auto;
+    gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-top: 3px;
+}
+
+.checkbox-container label {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.checkbox-container u {
+    color: orange;
+    text-decoration: none;
+}
+
+/* Updated Captcha Styles */
+.captcha-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto 12px auto;
+    gap: 10px;
+}
+
+.captcha-display {
+    background: #f0f0f0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: monospace;
+}
+
+.refresh-captcha {
+    background: #e0e0e0;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.refresh-captcha:hover {
+    background: #d0d0d0;
+}
+
+.form-button {
+    background-color: orange;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 28px;
+    margin: 15px auto 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40%;
+    display: block;
+}
+
+.form-button:hover {
+    background-color: #003366;
+}
+
+/* Services Section */
+.services-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.services-title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.services-title:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: orange;
+    margin: 10px auto 0;
+}
+
+.treatments-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.treatment-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.treatment-box {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    /* margin-bottom: 30px; */
+    flex: 1;
+    min-width: 300px;
+    max-width: 1000px;
+    border-color: orange;
+
+    
+
+}
+
+.treatment-box.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.treatment-box.horizontal .treatment-image {
+    width: 50%;
+    height: auto;
+}
+
+.treatment-box.horizontal .treatment-details {
+    padding: 20px;
+    width: 50%;
+    padding: 30px;
+}
+
+.treatment-image {
+    height: auto;
+}
+
+.treatment-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.treatment-details h3 {
+    margin-top: 0;
+}
+
+.treatment-details h4 {
+    margin-top: 5px;
+    color: #555;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.service-features li {
+    padding: 6px 0;
+    position: relative;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.service-features li:before {
+    content: "•";
+    color: orange;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.service-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.service-btn {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.service-btn:hover {
+    background: #e69500;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 16px;
+    color: #444;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px 0;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+.stat-item {
+    margin: 10px 15px;
+    text-align: center;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.testimonials-header h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.testimonials-header p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.patient-card {
+    flex: 1 1 250px;
+    max-width: 280px;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.patient-card:hover {
+    transform: translateY(-5px);
+}
+
+.patient-avatar {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border: 3px solid #f0f8ff;
+}
+
+.patient-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.patient-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.patient-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+
+.patient-location {
+    color: orange;
+    font-size: 16px;
+}
+
+/* Why Choose Section */
+.why-choose-section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-choose-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-choose-section h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background: orange;
+    margin: 0 auto 40px auto;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.features-list {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.feature-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-3px);
+}
+
+.plus-icon {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.features-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.features-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Google Reviews Section */
+.google-reviews-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.google-reviews-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.google-reviews-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.rating-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.google-icon {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4285F4;
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.google-icon.small {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+}
+
+.rating-text h3 {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+}
+
+.rating-text h3 span {
+    font-size: 18px;
+    color: #666;
+}
+
+.rating-text p {
+    margin: 5px 0 0 0;
+    color: #666;
+    font-size: 16px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.review-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.review-author {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.review-content p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .google-reviews-section h2 {
+        font-size: 28px;
+    }
+    
+    .rating-text h3 {
+        font-size: 24px;
+    }
+    
+    .review-card {
+        min-width: 100%;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .treatment-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .treatment-box {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .treatment-box.horizontal {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .treatment-box.horizontal .treatment-image {
+        width: 100%;
+    }
+    .treatment-box.horizontal .treatment-details {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+    .treatment-details h4 {
+        text-align: left;
+    }
+    
+    .features-container {
+        flex-direction: column;
+    }
+    
+    .features-list {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .features-image {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .overlay-box {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        max-width: 100%;
+    }
+
+    .form-container {
+        border-left: none;
+        border-top: 2px solid #eee;
+    }
+
+    .form-input, .captcha-container {
+        width: 80%;
+    }
+    
+    .checkbox-container {
+        width: 80%;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .patient-card {
+        flex: 1 1 100%;
+        max-width: 300px;
+    }
+
+    .patient-info {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .right-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .testimonials-header h2 {
+        font-size: 28px;
+    }
+
+    .testimonials-header p {
+        font-size: 16px;
+    }
+
+    .patient-avatar {
+        width: 130px;
+        height: 130px;
+    }
+
+    .why-choose-section h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .patient-name,
+    .patient-location {
+        font-size: 16px;
+    }
+    
+    .form-button {
+        width: 80%;
+    }
+    
+}
